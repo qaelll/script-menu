@@ -13,8 +13,7 @@ echo "                Menu de permisos"
 echo "*************************************************"
 echo "1. Dar permisos"
 echo "2. Quitar permisos"
-echo "3. Cambiar propietario"
-echo "4. Salir"
+echo "3. Salir"
 echo "*************************************************"
 read  opcion
 clear
@@ -101,43 +100,7 @@ clear
 esac
 done
 ;;
-
-
-3)
-bus
-clear
-echo -e "Estos son los propietarios actuales\n"
-ls -l -d $ruta
-echo -e "\n ¿Que propietario desea cambiar? usuario(u)/grupo(g)"
-read prop
-clear
-case $prop
-in
-u)read -p "Introduzca el nombre del nuevo propietario: " nuev
-chown $nuev $ruta
-clear
-echo -e "Estos son los propietarios actuales\n"
-ls -l -d $ruta
-sleep 3
-;;
-g)read -p "Introduzca el nombre del nuevo propietario: " nuev
-chown :$nuev $ruta
-clear
-echo -e "Estos son los propietarios actuales\n"
-ls -l -d $ruta
-sleep 3
-
-;;
-*)clear
-echo "Introduzca una opcion valida"
-sleep 3
-clear
-;;
-esac
-
-;;
-
-4)clear
+3)clear
 exit
 ;;
 *)clear

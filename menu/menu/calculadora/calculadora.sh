@@ -65,6 +65,13 @@ case $seleccion in
    read suma1
    read suma2
    clear
+	if [ $suma2 -eq 0 ]
+		then
+			echo "No se puede dividir entre 0"
+			sleep 3
+			clear
+			continue
+		else
    echo "El resultado de dividir " $suma1 " / " $suma2 " es:"
    calc $suma1/$suma2
    echo "Quiere realizar otra operacion?[s/n]"
@@ -76,7 +83,8 @@ case $seleccion in
              clear
              exit
  
-   fi;;
+   fi
+	fi;;
 
 5) echo "Introduzca los numeros para saber el resto de uno en uno:"
    read suma1

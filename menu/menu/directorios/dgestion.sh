@@ -93,7 +93,7 @@ rec
 clear
 read -p "Introduce el nombre que tendra el directorio comprimido: " nom
 
-zip -R ~/Documentos/$nom $ruta
+zip -r ~/Documentos/$nom $ruta
 
 echo "Se ha comprimido el directorio en ~/Documentos"
 
@@ -103,7 +103,7 @@ else
 read -p "Introduce la ruta y el nombre del directorio a comprimir: " nom
 read -p "Introduce el nombre que tendra el comprimido: " nom2
 
-zip -R ~/Documentos/$nom2 $nom
+zip -r ~/Documentos/$nom2 $nom
 clear
 echo "Se ha comprimido el archivo en ~/Documentos"
 sleep 3
