@@ -2,7 +2,7 @@
 Una serie de scripts que estoy realizando como proyecto en ASIR para permitir que un usuario sin conocimientos de linux pueda manejarlo. Decir que esta planteado desde el punto de vista de un usuario sin privilegios.
 
 # Importante
-Todavia estoy desarrollando el script asi que puede contener fallos, lo ire actualizando a medida que lo vaya desarrollando en clase.
+Script final presentado en la asignatura.
 
 # Requisitos
 El script esta desarollado en parrot con algunos comandos que quizas no esten en todas las distros como por ejemplo:
